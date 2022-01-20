@@ -135,7 +135,6 @@ file_data.each{
     }
     Book.new(new_book)
 }
-file = File.close()
 
 file = File.open("./Magazines.txt")
 file_data = File.read(file).split("\n")
@@ -152,12 +151,9 @@ file_data.each{
     Magazine.new(new_magazine)
 }
 
-file = File.close()
 # METHODS
 
 # Method Add item
-
-
 
 def addItem(itemItself)
     item = itemItself.split(",")
